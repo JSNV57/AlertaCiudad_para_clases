@@ -7,6 +7,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 public class MainActivity extends AppCompatActivity {
+    //primeros cambios
     private MainActivityFragment mainActivityFragment;
     final private int ASK_MULTIPLE_PERMISSION_REQUEST_CODE = 124;
     @Override
