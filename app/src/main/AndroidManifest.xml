@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="colocaelnombredetudominio.com.alerta">
+
+    <!-- permiso de acceso a internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Permiso para  que las aplicaciones accedan a información sobre redes. -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Permiso para  que una aplicación envíe mensajes SMS. -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- Permiso que una aplicación escriba en almacenamiento externo. -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- Permite que una aplicación acceda a la ubicación aproximada.. -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- Permite una aplicación para acceder a la ubicación precisa.. -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- Permite una aplicación para acceder a la camara.. -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Login" />
+    </application>
+
+</manifest>
